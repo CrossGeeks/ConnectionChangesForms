@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StackLayout xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="ConnectionChangeFormsSample.Views.ConnectionViewWithAnimation"
+             IsVisible="{Binding IsNotConnected}" 
+             xmlns:forms="clr-namespace:Lottie.Forms;assembly=Lottie.Forms"
+             Spacing="0">
+           <forms:AnimationView 
+                Animation="internetconnection.json" 
+                Loop="true"
+                AutoPlay="true"
+                HeightRequest="200"
+                HorizontalOptions="FillAndExpand" />
+          <Label Text="No internet connection"
+                 TextColor="OrangeRed"
+                 HorizontalOptions="CenterAndExpand"
+                 FontSize="15"/>
+</StackLayout>

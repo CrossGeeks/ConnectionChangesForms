@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="ConnectionChangeFormsSample.MainPage" 
+             xmlns:local="clr-namespace:ConnectionChangeFormsSample.Views"
+             xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core" 
+             ios:Page.UseSafeArea="true"
+             Title="Main">
+    <StackLayout>
+         <!--<local:ConnectionView/>-->
+        <local:ConnectionViewWithAnimation/>
+        <Label Text="Welcome to Xamarin.Forms!" 
+               HorizontalOptions="Center"
+               Margin="20"/>
+        <Button Text="Go to detail"
+                Margin="20"
+                TextColor="White"
+                BackgroundColor="DodgerBlue"
+                Clicked="Handle_Clicked"/>
+    </StackLayout>
+</ContentPage>
